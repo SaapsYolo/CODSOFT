@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom left, rgb(57, 57, 77), rgb(185, 185, 212));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator{
+    background: rgb(255, 255, 255,.5) ;
+    /* filter: blur(10px); */
+    backdrop-filter: 50px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,.4);
+    /* background: transparent; */
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    margin: 10px;
+}
+.calculator form input:hover{
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    border: rgb(255, 255, 255,.5) 2px solid;
+    border-radius: 5px;
+}
+form .display input{
+    text-align: right;
+    flex: 3;
+    font-size: 45px;
+    box-shadow: none;
+}
+ form input.equal{
+    width: 145px;
+ }
+.displayScreen{
+    background: transparent;
+}
+ .btnNumber{
+    background-color: rgb(209, 178, 183);
+ }
+ .btnDelete{
+    color: rgb(238, 150, 150) !important;
+ }
+ .equal{
+    background-color: rgb(174, 174, 255);
+ }
+ .btnOperator{
+    background-color: rgb(210, 180, 150);
+ }
+ .comma{
+    background-color: rgb(118, 190, 190);
+ }
+ .bracket{
+    background-image: linear-gradient(-90deg, rgba(63,156,197,0.9), rgba(100,191,191,0.9));
+ }
